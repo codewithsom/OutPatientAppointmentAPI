@@ -43,7 +43,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/OutPatientAppointmentAPI.git
+   git clone [https://github.com/yourusername/OutPatientAppointmentAPI.git](https://github.com/codewithsom/OutPatientAppointmentAPI.git)
    cd OutPatientAppointmentAPI
 
 2. Install the project dependencies:
