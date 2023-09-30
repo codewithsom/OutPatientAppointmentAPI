@@ -44,34 +44,55 @@ Before you begin, ensure you have met the following requirements:
    git clone https://github.com/yourusername/OutPatientAppointmentAPI.git
    cd OutPatientAppointmentAPI
    
-2. Install the project dependencies:
-   npm install
+## Install Project Dependencies
 
-3. Create a .env file in the project root directory and add your MongoDB connection URI and a custom port:
+2. To install the required project dependencies, run the following command:
+
+```bash
+npm install
+
+## Create .env File for MongoDB Configuration
+
+3. Create a `.env` file in the project's root directory.
+
+   ```env
    MONGODB_URI=your-mongodb-uri
    PORT=your-port
 
-4. Start the Node.js server:
-    node server.js
+## Start the Node.js Server
 
-Usage
-API Endpoints
-List Doctors: Get a list of all available doctors.
+4. To run the Node.js server, use the following command:
 
-Endpoint: GET /api/doctors
-Doctor Detail: Get detailed information about a specific doctor.
+```bash
+node server.js
 
-Endpoint: GET /api/doctors/:doctorId
-Book Appointment: Book an appointment with a doctor.
+## Usage
 
-Endpoint: POST /api/appointments/book
-Request Body (JSON):
-{
-  "doctorId": "doctor-id",
-  "patientName": "Patient Name",
-  "appointmentTime": "2023-10-15T10:30:00Z"
-}
+### API Endpoints
 
-Contributing
+- **List Doctors**: Get a list of all available doctors.
+
+  - Endpoint: `GET /api/doctors`
+
+- **Doctor Detail**: Get detailed information about a specific doctor.
+
+  - Endpoint: `GET /api/doctors/:doctorId`
+
+- **Book Appointment**: Book an appointment with a doctor.
+
+  - Endpoint: `POST /api/appointments/book`
+
+  - Request Body (JSON):
+
+    ```json
+    {
+      "doctorId": "doctor-id",
+      "patientName": "Patient Name",
+      "appointmentTime": "2023-10-15T10:30:00Z"
+    }
+    ```
+
+## Contributing
+
 Contributions are welcome! If you have ideas, bug reports, or feature requests, please open an issue or create a pull request.
 
