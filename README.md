@@ -1,8 +1,10 @@
 # OutPatientAppointmentAPI
 
-![Node.js](https://img.shields.io/badge/Node.js-14.17.6-green)
-![Express](https://img.shields.io/badge/Express-4.17.1-blue)
-![MongoDB](https://img.shields.io/badge/MongoDB-4.4.6-brightgreen)
+![Node.js](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=black)
+![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) 
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/VS_Code-%23007ACC.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-%23FF6C37.svg?style=for-the-badge&logo=postman&logoColor=white)
 
 A Node.js and Express API for managing out-patient appointments with MongoDB integration. This API allows doctors to list their weekly schedules, patients to book appointments, and provides details about doctors' practice.
 
@@ -15,7 +17,6 @@ A Node.js and Express API for managing out-patient appointments with MongoDB int
 - [Usage](#usage)
   - [API Endpoints](#api-endpoints)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -32,9 +33,10 @@ A Node.js and Express API for managing out-patient appointments with MongoDB int
 
 Before you begin, ensure you have met the following requirements:
 
-- Node.js (v14.17.6 or higher) installed.
-- MongoDB server (v4.4.6 or higher) running or a valid MongoDB connection URI.
+- Node.js (LATEST_VERSION) installed.
+- MongoDB server (LATEST_VERSION) running or a valid MongoDB connection URI.
 - Postman or a similar tool for testing API endpoints.
+- Visual Studio Code (VS Code) for development.
 
 ### Installation
 
@@ -43,46 +45,42 @@ Before you begin, ensure you have met the following requirements:
    ```bash
    git clone https://github.com/yourusername/OutPatientAppointmentAPI.git
    cd OutPatientAppointmentAPI
-   
-## Install Project Dependencies
 
-2. To install the required project dependencies, run the following command:
+2. Install the project dependencies:
 
-```bash
-npm install
+    ```bash
+    npm install
 
-## Create .env File for MongoDB Configuration
+3. Create a .env file in the project root directory and add your MongoDB connection URI and a custom port:
 
-3. Create a `.env` file in the project's root directory.
+    ```env
+    MONGODB_URI=your-mongodb-uri
+    PORT=your-port
 
-   ```env
-   MONGODB_URI=your-mongodb-uri
-   PORT=your-port
+4. Start the Node.js server:
 
-## Start the Node.js Server
+    ```bash
+    node server.js
 
-4. To run the Node.js server, use the following command:
+  Now, your project is set up and ready to run.
 
-```bash
-node server.js
-
-## Usage
+  ## Usage
 
 ### API Endpoints
 
 - **List Doctors**: Get a list of all available doctors.
 
-  - Endpoint: `GET /api/doctors`
+  - **Endpoint**: `GET /api/doctors`
 
 - **Doctor Detail**: Get detailed information about a specific doctor.
 
-  - Endpoint: `GET /api/doctors/:doctorId`
+  - **Endpoint**: `GET /api/doctors/:doctorId`
 
 - **Book Appointment**: Book an appointment with a doctor.
 
-  - Endpoint: `POST /api/appointments/book`
+  - **Endpoint**: `POST /api/appointments/book`
 
-  - Request Body (JSON):
+  - **Request Body (JSON)**:
 
     ```json
     {
@@ -92,7 +90,7 @@ node server.js
     }
     ```
 
+You can use these API endpoints to interact with the OutPatientAppointmentAPI and manage appointments.
+
 ## Contributing
-
 Contributions are welcome! If you have ideas, bug reports, or feature requests, please open an issue or create a pull request.
-
